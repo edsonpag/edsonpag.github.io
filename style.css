@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    max-width: 108rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-block: 3rem;
+    padding-inline: 1rem;
+    text-align: center;
+}
+
+.green-highlight {
+    color: #059c26;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.video-vturb {
+    max-width: 108rem;
+    width: 98%;
+    margin-inline: auto;
+}
