@@ -1,0 +1,151 @@
+.downsell-container p {
+    margin-bottom: 3rem;
+}
+
+.downsell-header {
+    background-color: red;
+    color: white;
+    width: 100vw;
+    padding-block: 2rem;
+}
+
+.downsell-header h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.8rem + 1.5vw);
+}
+
+.downsell-hero {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 102rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-bottom: 5rem;
+}
+
+.downsell-p-01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.4rem + 1.6vw);
+}
+
+.downsell-p-02 {
+    color: #e6db29;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.2rem + 1.5vw);
+}
+
+.downsell-p-03 {
+    color: #fb2213;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.2rem + 1.5vw);
+}
+
+.downsell-p-04 {
+    color: #018e21;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.2rem + 1.5vw);
+}
+
+.downsell-p-05 {
+    color: #ff432a;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(7rem + 1.5vw);
+}
+
+.downsell-strikeout {
+    position: relative;
+}
+
+.downsell-strikeout::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 50%;
+    border-bottom: 1rem solid rgb(255, 42, 42);
+    opacity: 0.8;
+    transform: translateX(50%) rotate(-10deg);
+    -webkit-transform: translateX(50%) rotate(-10deg);
+}
+
+.downsell-p-06 {
+    color: #018e21;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(7rem + 1.5vw);
+}
+
+.downsell-p-09 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.2rem + 1.5vw);
+}
+
+.downsell-p-10 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.2rem + 1.5vw);
+}
+
+.downsell-checkout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.downsell-checkout-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(254, 229, 161) 0%, rgb(204, 160, 94) 100%);
+    border: none;
+    outline: none;
+    height: 71px;
+    width: 95%;
+    max-width: 425px;
+    font-size: 18px;
+    padding-inline: 10px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    border-radius: 2.9rem;
+    box-shadow: 0 3px 10px rgba(255, 119, 3, 0.8);
+    cursor: pointer;
+    text-decoration: none;
+    transform: scale(1);
+    animation: pulseDownsell 1s infinite;
+}
+
+.downsell-checkout-internacional {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+@keyframes pulseDownsell {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 119, 3, 1);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 119, 3, 0.1);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 119, 3, 0.1);
+    }
+}

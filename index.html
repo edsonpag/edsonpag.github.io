@@ -56,29 +56,41 @@
     </main>
 
     <script>
-      // ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
-      const link = 'http://edsonpag.github.io/back.html';
+      let url = 'http://edsonpag.github.io/back.html';
     
-      function setBackRedirect(url) {
-        let urlBackRedirect = url;
-        urlBackRedirect = urlBackRedirect =
-          urlBackRedirect.trim() +
-          (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-          document.location.search.replace('?', '').toString();
-    
+      function setBackRedirect() {
+
         history.pushState({}, '', location.href);
         history.pushState({}, '', location.href);
         history.pushState({}, '', location.href);
     
         window.addEventListener('popstate', () => {
+          let urlBackRedirect = url;
+          urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() + (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') + document.location.search.replace('?', '').toString();
           console.log('onpopstate', urlBackRedirect);
           setTimeout(() => {
             location.href = urlBackRedirect;
           }, 1);
         });
       }
-    
-      setBackRedirect(link);
+
+      function updateBackRedirect() {
+        const myInterval = setInterval(() => {
+          const vturbId = '67e1c3c0e2dd0c1a84204c41'
+          const timeToReleaseTheDownsellInSeconds = 908
+          const currentVslTimeInSeconds = localStorage.getItem(vturbId)
+          if (currentVslTimeInSeconds) {
+              const currentVslTimeInSecondsParsed = parseInt(currentVslTimeInSeconds)
+              if (currentVslTimeInSecondsParsed >= timeToReleaseTheDownsellInSeconds) {
+                  url = 'http://edsonpag.github.io/downsell.html'
+                  clearInterval(myInterval)
+              }
+          }
+        }, 1000)
+      }
+
+      setBackRedirect();
+      updateBackRedirect();
     </script>
 </body>
 </html>
