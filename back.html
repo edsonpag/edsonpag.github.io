@@ -40,12 +40,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="back.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programm</title>
+    <title>Programm - Back</title>
 </head>
 <body>
+    <div class="modal-backredirect-container">
+        <div class="modal-backredirect">
+            <div class="modal-title">
+                <img width="80" height="80" src="./assets/images/pare.webp">
+                <h2>Attends ! Ne quitte pas encore la vidéo...</h2>
+            </div>
+            <div class="modal-content">
+                <h2>En seulement 3 minutes, tu vas découvrir le secret qui va te permettre de retrouver COMPLETEMENT ta vue, peu importe ton cas !</h2>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModalAndPlayVideo()" class="continuar-assistindo">CONTINUER À REGARDER</button>
+            </div>
+        </div>
+    </div>
     <main>
         <div class="headline">Juste ces <span class="green-highlight">3 ingrédients</span> dans l'eau pendant 2 jours, et je me suis réveillé sans problème avec mes yeux... <span class="green-highlight">(voir ci-dessous!)</span></div>
         <div class="vsl-container">
@@ -54,31 +69,12 @@
             </div>
         </div>
     </main>
-
     <script>
-      // ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
-      const link = 'http://edsonpag.github.io/back.html';
-    
-      function setBackRedirect(url) {
-        let urlBackRedirect = url;
-        urlBackRedirect = urlBackRedirect =
-          urlBackRedirect.trim() +
-          (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-          document.location.search.replace('?', '').toString();
-    
-        history.pushState({}, '', location.href);
-        history.pushState({}, '', location.href);
-        history.pushState({}, '', location.href);
-    
-        window.addEventListener('popstate', () => {
-          console.log('onpopstate', urlBackRedirect);
-          setTimeout(() => {
-            location.href = urlBackRedirect;
-          }, 1);
-        });
-      }
-    
-      setBackRedirect(link);
+        function closeModalAndPlayVideo() {
+            document.querySelector('.modal-backredirect-container').style.display = 'none'
+            scrollTo(0, 0)
+            document.querySelector('.smartplayer-resume__play').click()
+        }
     </script>
 </body>
 </html>
