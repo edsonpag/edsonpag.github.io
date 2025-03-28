@@ -190,11 +190,6 @@ svg#spinner-arrow {
     animation: pulseDownsell 1s infinite;
 }
 
-.downsell-checkout-internacional {
-    text-align: center;
-    font-size: 10px;
-}
-
 @keyframes pulseDownsell {
     0% {
         transform: scale(0.95);
