@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 80rem;
+    margin-inline: auto;
 }
 
 .upsell-03-header-container  {
