@@ -39,6 +39,10 @@ body {
     font-size: 2.3rem;
 }
 
+.upsell-04-hero-container {
+    padding-inline: 1rem;
+}
+
 .upsell-04-hero {
     display: flex;
     flex-direction: column;
