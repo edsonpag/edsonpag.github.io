@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upsell-01-header-container {
+    margin-bottom: 3rem;
+}
+
+.upsell-01-header {
+    background-color: #fe1700;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upsell-01-header h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.8rem + 1.6vw);
+}
+
+.upsell-01-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upsell-01-hero h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.8rem + 1vw);
+    margin-bottom: 1.6rem;
+}
+
+.upsell-01-hero h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.5rem + 0.8vw);
+    color: red;
+    margin-bottom: 1.6rem;
+}
+
+.vturb-container {
+    max-width: 108rem;
+    width: 98%;
+    margin-inline: auto;
+}
