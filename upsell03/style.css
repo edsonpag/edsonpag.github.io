@@ -48,3 +48,9 @@ body {
 .upsell-04-hero p {
     text-align: center;
 }
+
+#hotmart-sales-funnel {
+    width: 98%;
+    margin-top: 15px;
+    max-width: 500px;
+}

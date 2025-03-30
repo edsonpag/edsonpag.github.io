@@ -63,3 +63,9 @@ body {
     width: 98%;
     margin-inline: auto;
 }
+
+#hotmart-sales-funnel {
+    width: 98%;
+    margin-top: 15px;
+    max-width: 500px;
+}
