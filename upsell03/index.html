@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="pt-BR">
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B16G30PKN"></script>
     <script>
@@ -17,31 +17,66 @@
 <body>
     <div class="upsell-04-header-container">
         <div class="upsell-04-header">
-            <h1>Accès à vie + Garantie Prolongée + Tirage spécial</h1>
+            <h1>Acesso vitalício + Garantia estendida + Sorteio Especial</h1>
         </div>
     </div>
     <div class="upsell-04-hero-container">
         <div class="upsell-04-hero">
-            <p>Recevez un accès à vie à toutes les mises à jour et améliorations du <b>Programme Meilleure Vision</b> pour toujours, sans avoir à payer de frais mensuels !</p>
+            <p>Receba acesso vitalício a todas as atualizações e melhorias do <b>Programa Visão Melhor</b> para sempre, sem pagar uma taxa mensal!</p>
             <br>
-            <p>Vous bénéficierez également d'une garantie prolongée de 90 jours, et en plus vous participerez également à <b>un tirage exclusif pour un voyage</b> tous frais payés à <b>Hawaï aux États-Unis.</b></p>
+            <p>Você também receberá uma garantia estendida de 90 dias e participará de um sorteio exclusivo para uma viagem com todas as despesas pagas para o Havaí, EUA.
             <br>
-            <p><b>C'est vrai, tu ne l'as pas mal lu</b></p>
+            <p><b>É isso mesmo, você não leu errado</b></p>
             <br>
-            <p>Vous pouvez désormais remporter chez vous un accès à vie au <b>Programme Vision Meilleure</b> et une extension de <b>garantie de 90 jours</b>, et en plus de tout cela, vous serez automatiquement inscrit au tirage au sort pour <b>un voyage à Hawaï aux États-Unis</b> avec tout payé.</p>
+            <p>Agora você pode levar para casa acesso vitalício ao <b>Programa Visão Melhor</b> e uma garantia estendida de 90 dias e, além de tudo isso, você participará automaticamente de um sorteio de <b>uma viagem ao Havaí, EUA</b> com tudo pago.</p>
             <br>
         </div>
     </div>
 
-    <!-- HOTMART - Sales Funnel Widget -->
-    <!--- sales funnel container --->
-    <div id="hotmart-sales-funnel"></div>
-
-    <!--- script load and setup --->
-    <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
-    <script>
-    checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
-    </script>
-    <!-- HOTMART - Sales Funnel Widget -->
+    
+    <div>
+    <meta charset="UTF-8">
+      <cakto-upsell-buttons>
+         <cakto-upsell-accept
+           bg-color="#0f7865"
+           text-color="#ffffff"
+           upsell-accept-url="members_area"
+           offer-id="a2hvez5"
+           app-base-url="https://app.cakto.com.br"
+           offer-type="upsell"
+           upsell-reject-url="members_area"   
+         >
+           Sim, quero aproveitar a oferta
+         </cakto-upsell-accept>
+         <cakto-upsell-reject
+           upsell-reject-url="members_area"       
+         >
+           Não, eu não quero aproveitar a oferta
+         </cakto-upsell-reject>
+       </cakto-upsell-buttons>  
+       
+   
+        <!-- Descomente o código abaixo para estilzar o css dos botões -->
+         <!-- <style>
+             /* Botão de aceitar upsell */
+             cakto-upsell-accept::part(button) {
+                 background-color: red;
+                 color: white;
+                 /* Ajuste do tamanho do botão 
+                 Descomente o código abaixo para definir um tamanho customizado para o botão */
+                 /* width: 100vw; */
+             }
+   
+             /* Botão de rejeitar upsell */
+             cakto-upsell-reject::part(button) {
+                 background-color: blue;
+                 color: white;
+             }
+         </style> -->
+   
+     <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
+    </div>
+   
+   
 </body>
 </html>l
