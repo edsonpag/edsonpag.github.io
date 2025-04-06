@@ -5,35 +5,118 @@
     font-family: "Roboto", sans-serif;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 body {
-    font-size: 1.6rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0px !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.headline {
-    max-width: 108rem;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-block: 3rem;
-    padding-inline: 1rem;
-    text-align: center;
+.header {
+    margin-bottom: 20px;
+    width: 96vw;
+    max-width: 440px;
 }
 
-.green-highlight {
-    color: #059c26;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.video-vturb {
-    max-width: 108rem;
-    width: 98%;
+.step-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 3px;
     margin-inline: auto;
+    width: 100%;
+}
+
+.step-header div {
+    flex: 1;
+    max-width: calc(96vw / 4);
+    padding: 10px 0px;
+    color: white;
+    font-weight: bold;
+    background-color: #333;
+}
+
+.active {
+    background-color: #891e14 !important;
+}
+
+.alert {
+    background-color: #891e14;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    padding-block: 5px;
+    padding-inline: 15px;
+}
+
+.highlight {
+    background-color: #fdec54;
+    padding-inline: 10px;
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 3px;
+}
+
+.question-box {
+    width: 96vw;
+    max-width: 440px;
+}
+
+.question-box h2 {
+    color: #bf3a36;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.btn {
+    display: block;
+    background-color: #5fcf65;
+    border: 2px solid black;
+    color: white;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn small {
+    font-weight: normal !important;
+}
+
+.my-footer {
+    margin-top: 5px;
+    color: #bf3a36;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.vturb-container {
+    width: 100vw;
+    max-width: 440px;
+}
+
+.hide {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+.full-video {
+    padding: 0px !important;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
