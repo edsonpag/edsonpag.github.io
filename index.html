@@ -1,15 +1,54 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Site pessoal e portfólio de projetos.">
-    <title>Edson Silva Pagani</title>
-    <script type="module" crossorigin src="/assets/index-BYrD2aRH.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-QIWVrPB6.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truque da Água Gelada</title>
+</head>
+
+<body>
+    <a class="banner-container" href="#">
+        <div class="banner"></div>
+    </a>
+
+    <div class="app-container">
+        <div class="shadow"></div>
+        <div class="app">
+            <a class="product-item-container" data-link="./receita/">
+                <div class="product-item">
+                    <img width="38" height="38" src="./src/img/logo.png" class="product-image"  loading="lazy">
+                    <p class="product-name">Truque da Água Gelada</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        const productItemContainers = document.querySelectorAll('.product-item-container')
+        productItemContainers.forEach((productItemContainer, index) => {
+            productItemContainer.addEventListener('click', () => {
+                productItemContainer.classList.add('product-item-animation')
+                setTimeout(() => {
+                    location.href = productItemContainer.dataset.link
+                }, 200)
+            })
+        })
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.product-item-container', {
+            distance: '50px',
+            origin: 'top',
+            duration: 600,
+            interval: 150
+        })
+    </script>
+</body>
+
 </html>
