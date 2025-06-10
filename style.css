@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.headline {
+    width: 96%;
+    margin-inline: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.headline h5 {
+    font-weight: normal;
+}
+
+.vturb-container {
+    max-width: 980px;
+    width: 96%;
+    margin-inline: auto;
+    margin-top: 20px;
+}
