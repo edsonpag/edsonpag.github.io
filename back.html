@@ -44,6 +44,13 @@
 
 
     <script>
+
+        function closeModalAndPlayVideo() {
+            document.querySelector('.modal-backredirect-container').style.display = 'none'
+            scrollTo(0, 0)
+            document.querySelector('.smartplayer-resume__play').click()
+        }
+
         let downsell = false
 
         history.pushState({}, '', location.href)
