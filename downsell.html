@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="downsell.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downsell 01</title>
+</head>
+
+<body>
+    <div class="downsell-container">
+        <div class="downsell">
+            <div class="downsell-header-container">
+                <div class="downsell-header">
+                    <h1>CUIDADO! NÃO FECHE A PÁGINA AINDA..</h1>
+                    <h3>Quando sua compra for concluída, verifique seu E-mail!</h3>
+                </div>
+            </div>
+            <div class="downsell-hero-container">
+                <div class="downsell-hero">
+                    <p class="p-01">OK, ENTENDI! VOCÊ PENSOU QUE R$147 ESTAVA CARO DEMAIS, CERTO?</p>
+                    <p class="p-02">Bom, eu gostaria de te oferecer uma última oportunidade!</p>
+                    <p class="p-03">Farei essa decisão ser a mais fácil que você já tomou!</p>
+                    <p class="p-04">SERÁ SUA ÚLTIMA CHANCE RECUPERAR SEU GRANDE AMOR. SOMENTE NESTA PÁGINA E AGORA, VOCÊ PODERÁ LEVAR O SIMPATIA DO AMOR POR APENAS:</p>
+                    <p class="p-05 strikeout">R$147</p>
+                    <p class="p-06">R$97,00</p>
+                    <div class="checkout-container">
+                        <button class="checkout-link" onclick="goToCheckout()">QUERO MEU AMOR DE VOLTA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goToCheckout() {
+            setTimeout(() => {
+                location.href = 'https://pay.cakto.com.br/gqpuwem' + location.search;
+            }, 1)
+        }
+    </script>
+</body>
+
+</html>

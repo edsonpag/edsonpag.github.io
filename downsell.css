@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    user-select: none;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+.downsell-header {
+    background-color: red;
+    color: white;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.downsell-header h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.8rem + 1.5vw);
+}
+
+.downsell-header h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1rem + 1.3vw);
+}
+
+.downsell-hero-container {
+    background-color: black;
+}
+
+.downsell-hero {
+    color: white;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 102rem;
+    margin-inline: auto;
+    padding-inline: 1.2rem;
+    padding-bottom: 5rem;
+}
+
+.p-01 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.4rem + 1.6vw);
+}
+
+.p-02 {
+    color: #e6db29;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.2rem + 1.5vw);
+}
+
+.p-03 {
+    color: #fb2213;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.2rem + 1.5vw);
+}
+
+.p-04 {
+    color: #30ff29;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.2rem + 1.5vw);
+}
+
+.p-05 {
+    color: #ff432a;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(7rem + 1.5vw);
+}
+
+.strikeout {
+    position: relative;
+}
+
+.strikeout::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 50%;
+    border-bottom: 1rem solid rgb(255, 42, 42);
+    opacity: 0.8;
+    transform: translateX(50%) rotate(-10deg);
+    -webkit-transform: translateX(50%) rotate(-10deg);
+}
+
+.p-06 {
+    color: #30ff29;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(7rem + 1.5vw);
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.checkout-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(254, 229, 161) 0%, rgb(204, 160, 94) 100%);
+    border: none;
+    outline: none;
+    padding: 20px 40px;
+    max-width: 425px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    border-radius: 2.9rem;
+    box-shadow: 0 3px 10px rgba(255, 119, 3, 0.8);
+    cursor: pointer;
+}

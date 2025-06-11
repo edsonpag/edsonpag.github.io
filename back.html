@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '928589912692017');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=928589912692017&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
     <link rel="preload" href="https://scripts.converteai.net/eeec54d8-f61b-4606-ba81-1b99e6591839/players/6848764a419c832a1dc0921d/player.js" as="script">
     <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
     <link rel="preload" href="https://images.converteai.net/eeec54d8-f61b-4606-ba81-1b99e6591839/players/6848764a419c832a1dc0921d/thumbnail.jpg" as="image">
@@ -30,12 +13,26 @@ src="https://www.facebook.com/tr?id=928589912692017&ev=PageView&noscript=1"
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="back.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simpatia do Amor</title>
 </head>
 <body>
-    
+    <div class="modal-backredirect-container">
+        <div class="modal-backredirect">
+            <div class="modal-title">
+                <img width="80" height="80" src="./assets/pare.webp">
+                <h2>Espere! Esse vídeo pode sair do ar a qualquer momento...</h2>
+            </div>
+            <div class="modal-content">
+                <h2>Em apenas 1 minuto e 53 segundos você irá aprender essa simpatia que vai trazer o seu grande amor de volta não importando qual seja o seu caso. Essa é a sua última chance de assistir o vídeo até o final.</h2>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModalAndPlayVideo()" class="continuar-assistindo">Continuar assistindo</button>
+            </div>
+        </div>
+    </div>
     <div class="headline">
         <h1>Seu amor de volta em poucos dias.</h1>
         <h5>Simpatia infalível para fazer ele/ela correr atrás de você em poucos dias.</h5>
@@ -68,9 +65,7 @@ src="https://www.facebook.com/tr?id=928589912692017&ev=PageView&noscript=1"
 
         addEventListener('popstate', () => {
             setTimeout(() => {
-                if (!downsell)
-                    location.href = 'https://edsonpag.github.io/back.html' + location.search
-                else
+                if (downsell)
                     location.href = 'https://edsonpag.github.io/downsell.html' + location.search
             }, 1)
         })
