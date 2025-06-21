@@ -57,8 +57,6 @@ body {
     margin-inline: auto;
 }
 
-
-
 .strikeout {
     position: relative;
 }
@@ -105,4 +103,8 @@ body {
     background: none;
     text-decoration: underline;
     font-size: 1.6rem;
+}
+
+.downsell {
+    padding-inline: 20px;
 }

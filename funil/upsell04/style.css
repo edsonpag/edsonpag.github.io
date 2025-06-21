@@ -17,8 +17,9 @@ body {
 }
 
 .obg-visao-header-container {
-    background-color: #3fbc1a;
-    color: white;
+    background-color: yellow;
+    color: rgb(9, 9, 202);
+    font-weight: bold;
     padding: 1rem;
 }
 
@@ -38,12 +39,19 @@ body {
 .obg-visao-conteudo-container {
     margin-top: 2rem;
     margin-bottom: 5rem;
-    padding-inline: 20px;
 }
 
 .obg-visao-conteudo {
     text-align: center;
 }
+
+.obg-visao-conteudo img {
+    max-width: 150px;
+    margin-inline: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
 
 .obg-visao-conteudo span {
     font-size: 1.6rem;
