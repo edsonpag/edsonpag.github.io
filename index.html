@@ -2,6 +2,24 @@
 <html lang="es">
 <head>
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1884262375686510');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1884262375686510&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
     <link rel="preload" href="https://scripts.converteai.net/6aadded2-239c-450d-97d3-4f24617ec722/players/685603d4030cfc862ce18331/player.js" as="script">
     <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
     <link rel="preload" href="https://images.converteai.net/6aadded2-239c-450d-97d3-4f24617ec722/players/685603d4030cfc862ce18331/thumbnail.jpg" as="image">
@@ -19,24 +37,11 @@
     <title>Visión Mejor</title>
 </head>
 <body>
-    <div class="modal-backredirect-container">
-        <div class="modal-backredirect">
-            <div class="modal-title">
-                <img width="80" height="80" src="./assets/images/pare.webp">
-                <h2>¡Espera! Este video puede caerse en cualquier momento...</h2>
-            </div>
-            <div class="modal-content">
-                <h2>En tan solo 1 minuto y 53 segundos descubrirás el secreto que te devolverá la visión por <strong>COMPLETO</strong>, sea cual sea tu caso. Esta es tu última oportunidad de ver el video hasta el final.</h2>
-            </div>
-            <div class="modal-footer">
-                <button onclick="closeModalAndPlayVideo()" class="continuar-assistindo">Continúa viendo el vídeo</button>
-            </div>
-        </div>
-    </div>
 
-     <div class="headline">
+    <div class="headline">
         <h3>Sólo estos <span class="green-highlight">3 ingredientes</span> en agua durante 2 días, y me desperté sin ningún problema de visión... <span class="green-highlight">(¡mira abajo!)</span></h3>
     </div>
+
 
     <div class="vturb-container">
         <div id="vid_685603d4030cfc862ce18331" style="position: relative; width: 100%; padding: 56.25% 0 0;"> <img id="thumb_685603d4030cfc862ce18331" src="https://images.converteai.net/6aadded2-239c-450d-97d3-4f24617ec722/players/685603d4030cfc862ce18331/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_685603d4030cfc862ce18331" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_685603d4030cfc862ce18331"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/6aadded2-239c-450d-97d3-4f24617ec722/players/685603d4030cfc862ce18331/player.js", s.async=!0,document.head.appendChild(s); </script>
@@ -299,19 +304,13 @@
     </section>
 
     <script>
-
-        function closeModalAndPlayVideo() {
-            document.querySelector('.modal-backredirect-container').style.display = 'none'
-            scrollTo(0, 0)
-            document.querySelector('.smartplayer-resume__play').click()
-        }
-
         let downsell = false
 
         history.pushState({}, '', location.href)
         history.pushState({}, '', location.href)
         history.pushState({}, '', location.href)
 
+        // vturb id + time to release
         const vturbId = '6848764a419c832a1dc0921d'
         const timeToReleaseTheDownsellInSeconds = 554
         const myInterval = setInterval(() => {
@@ -327,7 +326,9 @@
 
         addEventListener('popstate', () => {
             setTimeout(() => {
-                if (downsell)
+                if (!downsell)
+                    location.href = 'https://edsonpag.github.io/back.html'
+                else
                     location.href = 'https://edsonpag.github.io/downsell.html'
             }, 1)
         })
