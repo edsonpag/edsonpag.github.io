@@ -1,0 +1,34 @@
+body {
+    background-image: url("../src/img/bg.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: repeat;
+    color: greenyellow;
+    height: 100vh;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-block: 3rem;
+    text-align: center;
+}
+
+.accordion-container {
+    width: 95%;
+    max-width: 76.8rem;
+    margin-inline: auto;
+}
+
+.accordion-button {
+    font-size: 16px;
+    font-weight: bold;
+}

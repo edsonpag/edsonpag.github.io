@@ -1,0 +1,299 @@
+.receita-header {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.receita-header h1 {
+    margin-bottom: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(3rem + 1.5vw);
+}
+
+.receita-header h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: calc(1.6rem + 1.3vw);
+}
+
+
+.receita-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 102rem;
+    margin-inline: auto;
+    padding-inline: 1.2rem;
+    padding-bottom: 5rem;
+}
+
+.p-01 {
+    color: #ffb000;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(1.4rem + 1.6vw);
+    margin-bottom: 3rem;
+}
+
+.p-02 {
+    font-weight: normal;
+    text-align: center;
+    font-size: calc(1.6rem + 1.5vw);
+    margin-bottom: 3rem;
+}
+
+.p-03 {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(2.6rem + 1.5vw);
+    margin-bottom: 3rem;
+}
+
+.ingredientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ingrediente-container {
+    width: 100%;
+}
+
+.ingrediente {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.ingrediente img {
+    width: 96px;
+}
+
+.descricao-ingrediente {
+    font-weight: bold;
+    font-size: calc(1.6rem + 1vw);
+    width: 180px;
+}
+
+.preparo-container p {
+    text-align: center;
+    font-size: calc(1.6rem + 1.5vw);
+    margin-bottom: 22px;
+}
+
+.comentarios-container {
+    margin-bottom: 3rem;
+}
+
+.depoiment {
+    position: relative;
+    width: 95vw;
+    max-width: 55rem;
+    margin-top: 2.5rem;
+    border-radius: 8px;
+    margin-inline: auto;
+    padding: 3rem 2rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.apagar-comentario {
+    font-size: 1rem;
+    color: red;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    text-decoration: underline;
+}
+
+.line-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 5px;
+}
+
+.line-2 {
+    margin-top: 1rem;
+}
+
+.filled {
+    color: #fbbc04;
+}
+
+.not-filled {
+    color: white;
+    stroke: black;
+}
+
+.name {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 85vw;
+    max-width: 55rem;
+    margin-inline: auto;
+}
+
+form div {
+    width: 100%;
+}
+
+form div input {
+    border: 0.1rem solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    border-radius: 0.6rem;
+    height: 3.8rem;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+form div textarea {
+    border: 0.1rem solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    border-radius: 0.6rem;
+    min-height: 10rem;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+.last-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+form button {
+    border: none;
+    outline: none;
+    border-radius: 0.6rem;
+    padding: 0.8rem 3rem;
+    background-color: #0069d9;
+    color: white;
+    font-weight: bold;
+}
+
+.stars svg {
+    cursor: pointer;
+}
+
+
+.bibliography-container h2 {
+    text-align: center;
+}
+
+.bibliography {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.bibliography ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.bibliography u {
+    font-family: 'Open Sans';
+}
+
+.bibliography-first-list {
+    margin-top: 2rem;
+}
+
+.bibliography-first-list,
+.bibliography-second-list {
+    max-width: 46.5rem;
+    width: 100%;
+}
+
+.bibliography-first-list li,
+.bibliography-second-list li {
+    font-family: open sans;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #999;
+    margin-top: 1.2rem;
+    word-wrap: break-word;
+    position: relative;
+    padding-left: 2.4rem;
+    width: 96%;
+}
+
+.reference-number {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: left;
+    color: #999;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .bibliography {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .bibliography-second-list {
+        margin-top: 2rem;
+    }
+
+    .reference-number,
+    .bibliography-first-list li,
+    .bibliography-second-list li {
+        font-size: 1.4rem;
+    }
+
+}
+
+.footer-container {
+    margin-top: 3.6rem;
+    background: #f9f9f9;
+    border-top: 0.1rem solid #dadada;
+}
+
+.footer {
+    padding: 2.2rem 0;
+    font-size: 1.6rem;
+    width: 90%;
+    color: #333;
+    text-align: center;
+    margin-top: 0.8rem;
+    margin-inline: auto;
+}
+
+.footer span {
+    display: block;
+}
+
+.footer span:first-child {
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    max-width: 90rem;
+}
