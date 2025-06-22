@@ -1,0 +1,32 @@
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-block: 3rem;
+    text-align: center;
+    padding-inline: 1.5rem;
+}
+
+body p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.accordion-container {
+    width: 95%;
+    max-width: 76.8rem;
+    margin-inline: auto;
+}
+
+.accordion-button {
+    font-size: 16px;
+    font-weight: bold;
+}
