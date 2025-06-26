@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="downsell.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downsell 01</title>
+</head>
+
+<body>
+    <div class="downsell-container">
+        <div class="downsell">
+            <div class="downsell-header-container">
+                <div class="downsell-header">
+                    <h1>¡PRECAUCIÓN! NO CIERRES LA PÁGINA TODAVÍA...</h1>
+                    <h3>Cuando tu compra esté completa, revisa tu correo electrónico</h3>
+                </div>
+            </div>
+            <div class="downsell-hero-container">
+                <div class="downsell-hero">
+                    <p class="p-01">¡Vale, ya lo entiendo! Pensabas que 27 dólares eran demasiado caros, ¿verdad?</p>
+                    <p class="p-02">Bueno, me gustaría ofrecerte una última oportunidad</p>
+                    <p class="p-03">Haré que esta decisión sea la más fácil que hayas tomado jamás</p>
+                    <p class="p-04">SERÁ TU ÚLTIMA OPORTUNIDAD PARA RECUPERAR LA VISIÓN. SOLO EN ESTA PÁGINA, AHORA PUEDES ACCEDER AL PROGRAMA VISIÓN MEJOR POR SOLO:</p>
+                    <p class="p-05 strikeout">$27</p>
+                    <p class="p-06">$17</p>
+                    <div class="checkout-container">
+                        <button class="checkout-link" onclick="goToCheckout()">QUIERO RECUPERAR MI VISIÓN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goToCheckout() {
+            setTimeout(() => {
+                location.href = 'https://pay.hotmart.com/E100413750H?off=n43z0il4&checkoutMode=10'
+            }, 1)
+        }
+    </script>
+</body>
+
+</html>

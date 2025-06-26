@@ -1,0 +1,140 @@
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-block: 3rem;
+    text-align: center;
+    padding-inline: 1.5rem;
+}
+
+body p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.accordion-container {
+    width: 95%;
+    max-width: 76.8rem;
+    margin-inline: auto;
+}
+
+.accordion-button {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.comentarios-container {
+    margin-bottom: 3rem;
+}
+
+.depoiment {
+    position: relative;
+    width: 95vw;
+    max-width: 55rem;
+    margin-top: 2.5rem;
+    border-radius: 8px;
+    margin-inline: auto;
+    padding: 3rem 2rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.apagar-comentario {
+    font-size: 1rem;
+    color: red;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    text-decoration: underline;
+}
+
+.line-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 5px;
+}
+
+.line-2 {
+    margin-top: 1rem;
+}
+
+.filled {
+    color: #fbbc04;
+}
+
+.not-filled {
+    color: white;
+    stroke: black;
+}
+
+.name {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 85vw;
+    max-width: 55rem;
+    margin-inline: auto;
+}
+
+form div {
+    width: 100%;
+}
+
+form div input {
+    border: 0.1rem solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    border-radius: 0.6rem;
+    height: 3.8rem;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+form div textarea {
+    border: 0.1rem solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    border-radius: 0.6rem;
+    min-height: 10rem;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+.last-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+form button {
+    border: none;
+    outline: none;
+    border-radius: 0.6rem;
+    padding: 0.8rem 3rem;
+    background-color: #0069d9;
+    color: white;
+    font-weight: bold;
+}
+
+.stars svg {
+    cursor: pointer;
+}

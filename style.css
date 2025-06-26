@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.headline h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    padding-inline: 20px;
+}
+
+.green-highlight {
+    color: rgb(46, 179, 46);
+}
+
+.vturb-container {
+    max-width: 980px;
+    width: 96%;
+    margin-inline: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.numero-comentarios {
+    font-size: 13px;
+    font-weight: bold;
+    padding-inline: 20px;
+    margin-bottom: 14px;
+    max-width: 1024px;
+    margin-inline: auto;
+}
+
+.facebook-comment {
+    margin-bottom: 40px;
+    max-width: 1024px;
+    margin-inline: auto;
+}
+
+.comentario-raiz {
+    display: flex;
+}
+
+.facebook-comment .left {
+    padding-top: 3px;
+    padding-inline: 6px;
+}
+
+.facebook-comment .left img {
+    border-radius: 50%;
+}
+
+.facebook-comment .right {
+    position: relative;
+    width: 100%;
+}
+
+.facebook-comment .right .comment {
+    font-size: 13px;
+    background-color: #f0f2f5;
+    border-radius: 18px;
+    padding: 10px 12px;
+    width: 98%;
+}
+
+.facebook-comment .right .comment .name {
+    color: #365899;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.acoes {
+    position: absolute;
+    bottom: -21px;
+    left: 17px;
+}
+
+.acoes small {
+    font-size: 11px;
+    margin-right: 7px;
+}
+
+.acoes small:nth-child(1),
+.acoes small:nth-child(2) {
+    color: #3c55b0;
+}
+
+.numero-de-curtidas {
+    position: absolute;
+    right: 13px;
+    bottom: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    padding: 2px 6px;
+    background-color: #ffffff;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));
+    border-radius: 10000px;
+}
+
+.numero-de-curtidas small {
+    font-weight: bold;
+}
+
+.resposta {
+    display: flex;
+    padding-left: 50px;
+    margin-top: 28px;
+}
+
+.comentarios-alerta {
+    margin-top: 50px;
+    font-size: 10px;
+    text-align: center;
+}

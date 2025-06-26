@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Mejor</title>
+</head>
+
+<body>
+    <a class="banner-container" href="#">
+        <div class="banner"></div>
+    </a>
+
+    <div class="app-container">
+        <div class="shadow"></div>
+        <div class="app">
+            <a class="product-item-container" data-link="./receita/">
+                <div class="product-item">
+                    <img width="38" height="38" src="./src/img/smoothie.png" class="product-image"  loading="lazy">
+                    <p class="product-name">Visión Mejor</p>
+                </div>
+            </a>
+
+            <a class="product-item-container" data-link="./exercicios-oculares/">
+                <div class="product-item">
+                    <img width="38" height="38" src="./src/img/visao-perfeita.png" class="product-image"  loading="lazy">
+                    <p class="product-name">Visión Perfecta</p>
+                </div>
+            </a>
+
+            <a class="product-item-container" data-link="./premium/">
+                <div class="product-item">
+                    <img style="border-radius: 50%;" width="38" height="38" src="./src/img/premium.png" class="product-image"  loading="lazy">
+                    <p class="product-name">Visión Mejor Premium</p>
+                </div>
+            </a>
+            
+            <a class="product-item-container" data-link="./grupo-vip/">
+                <div class="product-item">
+                    <img style="border-radius: 50%;" width="38" height="38" src="./src/img/GRUPO-VIP.png" class="product-image"  loading="lazy">
+                    <p class="product-name">Grupo Vip</p>
+                </div>
+            </a>
+
+              <a class="product-item-container" data-link="./seguimiento-exclusivo/">
+                <div class="product-item">
+                    <img width="38" height="38" src="./src/img/wpp.png" class="product-image"  loading="lazy">
+                    <p class="product-name">Seguimiento exclusivo</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        const productItemContainers = document.querySelectorAll('.product-item-container')
+        productItemContainers.forEach((productItemContainer, index) => {
+            productItemContainer.addEventListener('click', () => {
+                productItemContainer.classList.add('product-item-animation')
+                setTimeout(() => {
+                    location.href = productItemContainer.dataset.link
+                }, 200)
+            })
+        })
+    </script>
+</body>
+
+</html>
