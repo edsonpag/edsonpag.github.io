@@ -1,8 +1,0 @@
-.my-login-form {
-    height: 90vh;
-    max-width: 450px;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
